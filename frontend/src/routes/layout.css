@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-xl font-bold mb-3;
+  }
+  h3 {
+    @apply text-lg font-bold mb-2;
+  }
+  strong {
+    @apply font-bold;
+  }
+  em {
+    @apply italic;
+  }
+  ul {
+    @apply list-disc list-inside mb-4;
+  }
+  ol {
+    @apply list-decimal list-inside mb-4;
+  }
+  blockquote {
+    @apply border-l-4 border-base-content/30 pl-4 italic my-4;
+  }
+  code {
+    @apply font-mono bg-base-200 px-1 rounded;
+  }
+  pre {
+    @apply bg-base-200 p-4 rounded-lg overflow-x-auto mb-4;
+  }
+  pre code {
+    @apply bg-transparent p-0;
+  }
+}
